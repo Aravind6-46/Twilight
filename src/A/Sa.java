@@ -8,11 +8,15 @@ public class Sa {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.saucedemo.com/v1/");
 		
 		driver.manage().window().maximize();
+
+		driver.navigate().back();
+
+		driver.navigate().forward();
 		
 		driver.findElement(By.xpath("//input[@id=\"user-name\"]")).sendKeys("standard_user");
 		
