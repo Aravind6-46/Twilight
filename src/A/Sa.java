@@ -13,8 +13,6 @@ public class Sa {
 		driver.get("https://www.saucedemo.com/v1/");
 		
 		driver.manage().window().maximize();
-
-		driver.navigate().refresh();
 		
 		driver.findElement(By.xpath("//input[@id=\"user-name\"]")).sendKeys("standard_user");
 		
